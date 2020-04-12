@@ -4,8 +4,8 @@ import apolloClient from './services/Apollo';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import './mainStyle.css'
 
-import Header from './components/Layout/Header'
-import MainContent from './components/Layout/MainContent'
+import Header from './components/Layout/header/'
+import MainContent from './components/Layout/mainContent/'
 
 class App extends Component {
   render() {

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Navbar, Form, FormControl, Button, NavDropdown, Nav } from 'react-bootstrap'
-import Logo from '../../assets/interview.svg'
-import TextLogo from '../../assets/TextLogo.png'
+import Logo from '../../../assets/interview.svg'
+import TextLogo from '../../../assets/TextLogo.png'
 import './style.css'
 
 export default class Header extends Component {

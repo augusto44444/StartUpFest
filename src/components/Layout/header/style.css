@@ -1,0 +1,14 @@
+.header{
+    background-color: #fff;
+    border-bottom: rgb(60, 51, 73) solid 2px;
+}
+
+
+@media screen and (min-width: 1024px){
+    .button{
+        margin: 0px;
+    }
+    .row{
+        justify-content: inherit !important;
+    }
+}

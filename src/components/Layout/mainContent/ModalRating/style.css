@@ -1,0 +1,32 @@
+
+.ModalImage{
+    display: block;
+    margin: auto;
+    max-height: 200px;
+}
+
+blockquote {
+    margin: 20px auto;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    font-size: 1em;
+    padding-left: 15px;
+    background-color: rgb(223, 223, 223);
+    padding: 10px;
+    border-left: solid 10px rgb(90, 23, 248);
+}
+
+
+blockquote p{
+    text-justify: auto;
+}
+
+.ColunaDuvida{
+    position: relative !important;
+}
+
+.badgeDuvida{
+    position: absolute !important;
+    top: 0;
+    right: 0; 
+}

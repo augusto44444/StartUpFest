@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Toast, Alert } from 'react-bootstrap'
 
-
+import './style.css'
 
 export default class Toastr extends Component {
     constructor(props) {
@@ -27,7 +27,7 @@ export default class Toastr extends Component {
         const message = this.props.message ? this.props.message : null
 
         return (
-            <Toast className='toastr' onClose={() => this.setState({ show: false })} show={show} delay={3000} autohide style={{display: 'none'}}>
+            <Toast className='toastr' onClose={() => this.setState({ show: false })} show={show} delay={3000} autohide style={{ display: this.state.show ? 'block' : 'none' }}>
                 <Toast.Header>
                     <i className='fa fa-info-circle' style={{ color: '#5a17f8' }}></i>
                     <strong className="mr-auto">Aviso</strong>

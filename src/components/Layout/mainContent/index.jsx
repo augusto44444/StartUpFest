@@ -6,9 +6,9 @@ import gql from 'graphql-tag';
 import './style.css'
 import { Card, CardGroup, Button, Form, Badge, Spinner, Row, Col } from 'react-bootstrap'
 
-import RatingModal from './ratingModal'
+import RatingModal from './ModalRating/'
 
-import Toastr from '../Toastr'
+import Toastr from '../../Toastr'
 
 class MainContent extends Component {
     constructor(props) {
@@ -32,7 +32,7 @@ class MainContent extends Component {
     renderStartup() {
         const { startups } = this.state;
         return (
-            <Row classname='rowMainContent'>
+            <Row className='rowMainContent'>
                 {
                     startups.map((startup, i) => (
                         <Col key={i} sm='12' md='3' >

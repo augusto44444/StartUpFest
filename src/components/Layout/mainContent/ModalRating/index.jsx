@@ -2,9 +2,9 @@ import React, { Component } from 'react'
 import { Modal, Button, Image, Row, Col, Badge, Tooltip, OverlayTrigger, Form, Toast } from 'react-bootstrap'
 import ReactStars from 'react-rating-stars-component'
 
-import { SaveRate } from '../../Models/StartupRating'
+import { SaveRate } from '../../../../Models/StartupRating'
 
-import Toastr from '../Toastr'
+import './style.css'
 
 export default class ratingModal extends Component {
     constructor(props) {
