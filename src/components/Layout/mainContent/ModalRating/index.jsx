@@ -198,11 +198,11 @@ export default class ratingModal extends Component {
 
                                 placement="left"
                                 delay={{ show: 250, hide: 400 }}
-                                overlay={e => this.renderTooltip(e, 'Sugestões de mudanças que podem ser feitas.')}
+                                overlay={e => this.renderTooltip(e, 'Sugestões de mudanças que podem ser feitas ou incentivos a startup, boas palavras são sempre bem vindas ;)')}
                             >
                                 <Badge className='badgeDuvida' variant='info'><i className='fa fa-question' style={{ color: '#fff' }}></i></Badge>
                             </OverlayTrigger>
-                            <h3>O que podemos melhorar?</h3>
+                            <h3>Alguma sugestão ou comentário?</h3>
                         </Col>
                         <Col sm='12' md='8'>
                             <Form.Control as='textarea' rows='3' value={this.state.comment} onChange={(e) => this.setState({ comment: e.target.value })} placeholder="Eu acho que" />
