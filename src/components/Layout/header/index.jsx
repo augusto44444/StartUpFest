@@ -26,7 +26,7 @@ class Header extends Component {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mr-auto">
-                        <Nav.Link onClick={() => this.props.changeMenu(1)}>Home</Nav.Link>
+                        <Nav.Link onClick={() => this.props.changeMenu(1)}>Avaliar</Nav.Link>
                         <Nav.Link onClick={() => this.props.changeMenu(2)}>Avaliações</Nav.Link>
                         <Nav.Link onClick={() => this.props.changeMenu(3)}>Contate-nos</Nav.Link>
                     </Nav>
@@ -44,5 +44,6 @@ const changeMenu = (value) => {
 }
 
 const mapDispatchToProps = dispatch => bindActionCreators({ changeMenu }, dispatch)
+
 
 export default connect(null, mapDispatchToProps)(Header)
