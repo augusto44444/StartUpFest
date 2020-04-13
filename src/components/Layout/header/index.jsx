@@ -24,7 +24,7 @@ export default class Header extends Component {
                     <Nav className="mr-auto">
                         <Nav.Link href="#home">Home</Nav.Link>
                         <Nav.Link href="#link">Avaliações</Nav.Link>
-                        <Nav.Link href="#link">Contete-nos</Nav.Link>
+                        <Nav.Link href="#link">Contate-nos</Nav.Link>
                         {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
                             <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
