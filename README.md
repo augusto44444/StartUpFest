@@ -1,68 +1,52 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# ![](/public/logo192.png) ![/src/assets/TextLogo.png]
 
-## Available Scripts
+## O que foi utilizado no desenvolvimento
+- **_React.js_**
+- **Node.js**
+- _JavaScript_
+    > Utilizado nos frameworks NodeJs e Reactjs
+- Bootstrap
+- Font awesome
+- GraphQL (Query)
+    > Foi utilizado só a função de Query para consultar os dados da API.
+- Firebase
+    -Realtime database
+    -Hosting
+- PWA 
+    > Progressive web Aplication, utilizado para tornar a aplicação web hibrida, abaixo será explicado como fazer essa instalação nos respectivos dispositivos. **em caso de _Mobile_ o _PWA_ não possui suporte no IOS**
+- Redux
+- Gimp 
+    > Sistema de Designe de imagens e afins, utilizado para fazer a Logo 
 
-In the project directory, you can run:
 
-### `yarn start`
+# Como Instalar O APP no DeskTop
+    Esses passos funcionam no Google Chrome, e apenas nos links com o protocolo https, para o mesmo acesse Link: 
+##  [StartupFest](https://startupfest.web.app) ou https://startupfest.web.app
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1. Na barra url, clique no link indicado
+![](/src/assets/ChromePWA(1).jpeg)
+2. Clique em instalar como mostra a imagem
+![](/src/assets/ChromePWA(2).jpeg)
+3. Após a instalação irá abrir o app e será adicionado o icone no seu Desktop
+![](/src/assets/ChromePWA(3).jpeg)
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+# Como Instalar O APP no Mobile
+    Esses passos funcionam no Google Chrome e não tem suporte com IOS, e apenas nos links com o protocolo https, para o mesmo acesse Link: 
+##  [StartupFest](https://startupfest.web.app) ou https://startupfest.web.app
 
-### `yarn test`
+1. Ao iniciar a aplicação, após alguns segundos essa mensagem irá aparecer, clique nela para fazer a instalação
+![](/src/assets/Android(1).jpeg)
+2. Adicione a tela inicial como segue a imagem.
+![](/src/assets/Android(2).jpeg)
+3. Aguarde o tempo de instalação, pode demorar alguns poucos minutos.
+![](/src/assets/Android(3).jpeg)
+4. Será adicionado esse icone a tela de aplicativos do seu celular.
+![](/src/assets/Android(4).jpeg)
+4. Pronto, agora é só utilizar como um app _Mobile_
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn build`
+# Dados
+gmail: augusto.h.amaral@gmail.com
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+>Ps: **Uma das telas está sem imagem pois a API GraphQL retornou o link da imagem que por sua vez está desatualizado.**
