@@ -7,7 +7,7 @@ export default class Index extends Component {
     render() {
         return (
             <div>
-                <Rates />
+               <Rates />
             </div>
         )
     }

@@ -6,6 +6,9 @@
 
 }
 
+.card{
+    margin: 10px auto !important;
+}
 
 .loading{
     display: block;
@@ -15,7 +18,7 @@
 }
 
 .button{
-    width: 100% !important;
+    width: 100%  ;
     margin: 10px 0px;
 }
 
@@ -54,7 +57,7 @@
 }
 
 .linkModal:hover{
-    color: #5a17f8 !important;
+    color: #5a17f8  ;
 }
 
 .rightDiv  .badge:nth-child(1){
@@ -73,7 +76,7 @@
     
 
     .card-body{
-        display: flex !important;
+        display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
@@ -96,11 +99,11 @@
     }
     
     .rightDiv .badge{
-        display: flex !important;
+        display: flex;
         margin-left: 10px;
         justify-content: center;
         align-items: center;   
-        min-width: 30px !important;
+        min-width: 30px;
         height: 30px;
     }
     

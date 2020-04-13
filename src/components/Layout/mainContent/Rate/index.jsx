@@ -75,7 +75,7 @@ class MainContent extends Component {
 
     render() {
         return (
-            <div className='MainContent'>
+            <div className='MainContentRate'>
                 <Row>
                     <Col md='10' sm='10'>
                         <Form.Control type='text' onKeyPress={e => {

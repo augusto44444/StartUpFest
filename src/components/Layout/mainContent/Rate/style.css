@@ -1,4 +1,4 @@
-.MainContent{
+.MainContentRate{
     background: #fff;
     padding: 1.5em;
     margin-top: 10vh;
@@ -6,7 +6,7 @@
 }
 
 
-.row{
+.MainContentRate .row{
     justify-content: center !important;
 }
 
@@ -22,7 +22,7 @@
     margin: 10px 0px;
 }
 
-.card{
+.rowMainContent .card{
     display: block !important;
     position: relative;
     overflow: hidden;
