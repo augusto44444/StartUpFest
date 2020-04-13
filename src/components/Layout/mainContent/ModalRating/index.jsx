@@ -107,7 +107,7 @@ export default class ratingModal extends Component {
 
                                 placement="left"
                                 delay={{ show: 250, hide: 400 }}
-                                overlay={e => this.renderTooltip(e, 'De uma nota para o que achou da proposta dessa startup')}
+                                overlay={e => this.renderTooltip(e, 'Dê uma nota para "o que achou" da proposta dessa startup')}
                             >
                                 <Badge className='badgeDuvida' variant='info'><i className='fa fa-question' style={{ color: '#fff' }}></i></Badge>
                             </OverlayTrigger>
@@ -138,11 +138,11 @@ export default class ratingModal extends Component {
 
                                 placement="left"
                                 delay={{ show: 250, hide: 400 }}
-                                overlay={e => this.renderTooltip(e, 'Dê uma nota para o que você achou da apresentação dessa startup')}
+                                overlay={e => this.renderTooltip(e, 'Dê uma nota "para o que você achou" da apresentação dessa startup')}
                             >
                                 <Badge className='badgeDuvida' variant='info'><i className='fa fa-question' style={{ color: '#fff' }}></i></Badge>
                             </OverlayTrigger>
-                            <h3>Apresentção</h3>
+                            <h3>Apresentação</h3>
                         </Col>
                         <Col sm='12' md='8'>
                             <ReactStars
@@ -168,7 +168,7 @@ export default class ratingModal extends Component {
 
                                 placement="left"
                                 delay={{ show: 250, hide: 400 }}
-                                overlay={e => this.renderTooltip(e, 'O que você achou do que ja foi desenvolvido pela startup')}
+                                overlay={e => this.renderTooltip(e, 'O que "você achou" do que foi desenvolvido pela startup')}
                             >
                                 <Badge className='badgeDuvida' variant='info'><i className='fa fa-question' style={{ color: '#fff' }}></i></Badge>
                             </OverlayTrigger>
@@ -205,7 +205,7 @@ export default class ratingModal extends Component {
                             <h3>Alguma sugestão ou comentário?</h3>
                         </Col>
                         <Col sm='12' md='8'>
-                            <Form.Control as='textarea' rows='3' value={this.state.comment} onChange={(e) => this.setState({ comment: e.target.value })} placeholder="Otima ideia, parabéns!!!" />
+                            <Form.Control as='textarea' rows='3' value={this.state.comment} onChange={(e) => this.setState({ comment: e.target.value })} placeholder="Comentário..." />
                             <p>Campo opcional</p>
                         </Col>
                     </Row>

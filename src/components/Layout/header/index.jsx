@@ -11,8 +11,8 @@ import { bindActionCreators } from 'redux'
 class Header extends Component {
     render() {
         return (
-            <Navbar className='header' bg="default" fixed='top' border='dark' variant='light' expand="lg">
-                <Navbar.Brand href="#home" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+            <Navbar collapseOnSelect expand="lg" bg="light" variant="light" fixed='top'>
+                <Navbar.Brand href="#home">
                     <img src={Logo}
                         alt="Logo"
                         height="40"
@@ -23,12 +23,12 @@ class Header extends Component {
                         height="35"
                         alt="Startup fest" />
                 </Navbar.Brand>
-                <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                <Navbar.Collapse id="basic-navbar-nav">
+                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="mr-auto">
-                        <Nav.Link onClick={() => this.props.changeMenu(1)}>Avaliar</Nav.Link>
-                        <Nav.Link onClick={() => this.props.changeMenu(2)}>Avaliações</Nav.Link>
-                        <Nav.Link onClick={() => this.props.changeMenu(3)}>Contate-nos</Nav.Link>
+                        <Nav.Link href="#rate" onClick={() => this.props.changeMenu(1)}>Avaliar</Nav.Link>
+                        <Nav.Link href="#rates" onClick={() => this.props.changeMenu(2)}>Avaliações</Nav.Link>
+                        <Nav.Link href="#info" onClick={() => this.props.changeMenu(3)}>Informações</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
