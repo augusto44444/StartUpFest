@@ -21,6 +21,12 @@ class MainContent extends Component {
         }
     }
 
+    componentDidMount(){
+        if (this.props.startups.allStartups) {
+            this.setState({ startups: this.props.startups.allStartups })
+        }
+    }
+
     componentDidUpdate(prev) {
         if (prev.startups != this.props.startups) {
             if (this.props.startups.allStartups) {
@@ -35,7 +41,7 @@ class MainContent extends Component {
             <Row className='rowMainContent'>
                 {
                     startups.map((startup, i) => (
-                        <Col key={i} sm='12' md='3' >
+                        <Col key={i} sm='12' md={startups.length > 3 ? '3' : 'auto'} >
                             <Card bg='light' variant='dark' border='secondary' className='card' style={{ width: '18rem', margin: '10px 5px' }}>
                                 <Card.Img variant="top" src={startup.imageUrl} style={{ maxHeight: 250 }} />
                                 <Card.Body>
@@ -55,16 +61,17 @@ class MainContent extends Component {
 
     filter() {
         if (this.state.filter) {
-            const array = this.state.startups.find(item => {
+            const array = []
+            this.state.startups.map(item => {
                 if(item.name.toLowerCase().indexOf(this.state.filter.toLocaleLowerCase()) != -1){
-                    return item
-                } 
+                     array.push(item)
+                }
             })
 
-            console.log([array])
-            if (array && [array] && [array].length > 0) {
-                console.log("foi")
-                this.setState({ startups: [array], filter: '' })
+            // console.log(array)
+            if (array && array && array.length > 0) {
+                // console.log("foi")
+                this.setState({ startups: array, filter: '' })
             } else {
                 this.setState({ filter: '' })
             }

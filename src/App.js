@@ -7,6 +7,8 @@ import './mainStyle.css'
 import Header from './components/Layout/header/'
 import MainContent from './components/Layout/mainContent/'
 
+
+
 class App extends Component {
   render() {
     return (

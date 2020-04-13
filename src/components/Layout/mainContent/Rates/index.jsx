@@ -23,7 +23,49 @@ class MainContent extends Component {
         }
     }
 
+    componentDidMount() {
+        if (this.props.startups.allStartups) {
+            getRates().then(res => {
+                this.props.startups.allStartups.map(item => {
+                    const field = item.name.replace(/[^a-zA-Z0-9]+/g, '');
+                    const array = Object.values(res[field])
+                    // console.log(array)
+                    let proposta = 0;
+                    let pitch = 0;
+                    let desenv = 0;
+                    const comments = []
+                    array.map(rate => {
+                        proposta += rate.proposta;
+                        pitch += rate.pitch;
+                        desenv += rate.desenv;
+                        comments.push(rate.comment)
+                    })
+                    const tam = array.length;
+                    proposta = proposta / tam;
+                    pitch = pitch / tam;
+                    desenv = desenv / tam;
+                    let media = ((proposta + desenv + pitch) / 3)
 
+                    const obj = {
+                        startup: item,
+                        StartupName: array[0].StartupName,
+                        rate: media,
+                        proposta,
+                        pitch,
+                        desenv,
+                        qtdRates: tam,
+                        comments: comments,
+                    }
+                    const Rates = [...this.state.Rates, obj]
+                    this.setState({ Rates })
+                })
+                console.log(this.state)
+            }).catch(err => {
+                console.log('err')
+                console.log(err)
+            })
+        }
+    }
 
     componentDidUpdate(prev) {
         if (prev.startups != this.props.startups) {
@@ -192,7 +234,7 @@ class MainContent extends Component {
                             if (comment) {
                                 return (
                                     <Alert variant='success'>
-                                        {comment} 
+                                        {comment}
                                     </Alert>
                                 )
                             }

@@ -4,7 +4,11 @@ import Logo from '../../../assets/interview.svg'
 import TextLogo from '../../../assets/TextLogo.png'
 import './style.css'
 
-export default class Header extends Component {
+import { connect } from 'react-redux'
+import { bindActionCreators } from 'redux'
+
+
+class Header extends Component {
     render() {
         return (
             <Navbar className='header' bg="default" fixed='top' border='dark' variant='light' expand="lg">
@@ -22,19 +26,23 @@ export default class Header extends Component {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mr-auto">
-                        <Nav.Link href="#home">Home</Nav.Link>
-                        <Nav.Link href="#rates">Avaliações</Nav.Link>
-                        <Nav.Link href="#contat">Contate-nos</Nav.Link>
-                        {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-                            <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                            <NavDropdown.Divider />
-                            <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-                        </NavDropdown> */}
+                        <Nav.Link onClick={() => this.props.changeMenu(1)}>Home</Nav.Link>
+                        <Nav.Link onClick={() => this.props.changeMenu(2)}>Avaliações</Nav.Link>
+                        <Nav.Link onClick={() => this.props.changeMenu(3)}>Contate-nos</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
         )
     }
 }
+
+const changeMenu = (value) => {
+    return {
+        type: 'CHANGE_MENU',
+        payload: value
+    }
+}
+
+const mapDispatchToProps = dispatch => bindActionCreators({ changeMenu }, dispatch)
+
+export default connect(null, mapDispatchToProps)(Header)

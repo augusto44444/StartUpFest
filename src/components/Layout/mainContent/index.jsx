@@ -3,12 +3,24 @@ import React, { Component } from 'react'
 import Rate from './Rate'
 import Rates from './Rates'
 
-export default class Index extends Component {
+import { connect } from 'react-redux'
+
+class Index extends Component {
     render() {
+        console.log(this.props.menu)
         return (
             <div>
-               <Rates />
+                {this.props.menu == 1
+                    ?
+                    <Rate />
+                    :
+                    <Rates />
+                }
             </div>
         )
     }
 }
+
+const mapStateToProps = state => ({menu: state.menu})
+
+export default connect(mapStateToProps)(Index)
