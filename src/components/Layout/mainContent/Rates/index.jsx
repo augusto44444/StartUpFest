@@ -191,7 +191,9 @@ class MainContent extends Component {
                         {this.state.item && this.state.item.comments ? this.state.item.comments.map(comment => {
                             if (comment) {
                                 return (
-                                    <Card bg='light' variant='dark'>{comment}</Card>
+                                    <Alert variant='success'>
+                                        {comment} 
+                                    </Alert>
                                 )
                             }
                         }) : null}

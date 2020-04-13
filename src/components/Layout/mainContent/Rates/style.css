@@ -57,6 +57,9 @@
     color: #5a17f8 !important;
 }
 
+.rightDiv  .badge:nth-child(1){
+    font-size: 2em;
+}
 
 @media screen and (min-width: 1024px){
     .button{
@@ -99,6 +102,10 @@
         align-items: center;   
         min-width: 30px !important;
         height: 30px;
+    }
+    
+    .rightDiv  .badge:nth-child(1){
+        font-size: 1.5em;
     }
     
     .card-img{
