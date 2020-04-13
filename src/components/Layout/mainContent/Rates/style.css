@@ -44,6 +44,19 @@
     width: 30px;
 }
 
+.linkModal{
+    font-size: 1.2em;
+    cursor: pointer;
+    user-select: none;
+    font-weight: bold;
+    letter-spacing: 2px;
+    transition: all ease .5s;
+}
+
+.linkModal:hover{
+    color: #5a17f8 !important;
+}
+
 
 @media screen and (min-width: 1024px){
     .button{
@@ -99,6 +112,5 @@
     .status{
         margin-left: 20%;
     }
-
 
 }

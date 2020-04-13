@@ -4,7 +4,7 @@ import { graphql } from 'react-apollo';
 import gql from 'graphql-tag';
 
 import './style.css'
-import { Card, CardGroup, Button, Form, Badge, Spinner, Row, Col, Accordion } from 'react-bootstrap'
+import { Card, Modal, Button, Form, Badge, Spinner, Row, Col, Accordion, Alert } from 'react-bootstrap'
 
 import ReactStars from 'react-rating-stars-component'
 
@@ -17,7 +17,9 @@ class MainContent extends Component {
             startups: [],
             message: '',
             filter: '',
-            Rates: []
+            Rates: [],
+            item: null,
+            show: false
         }
     }
 
@@ -155,7 +157,7 @@ class MainContent extends Component {
                                                 <Badge variant='warning'>{parseInt(item.desenv) / 2}</Badge>
                                             </div>
                                             <div className='status'>
-                                                <Button variant='info'>Checar comentários</Button>
+                                                <a className='linkModal' onClick={() => this.setState({ item, show: true })}>Checar comentários</a>
                                             </div>
                                         </>
                                     </Accordion.Collapse>
@@ -177,6 +179,29 @@ class MainContent extends Component {
         return (
             <div className='MainContent'>
                 {this.state.Rates.length > 0 ? this.renderStartup() : <Spinner animation="border" className='loading' />}
+
+
+                <Modal show={this.state.show} onHide={() => this.setState({ ItemModal: null, show: false })} size="lg"
+                    aria-labelledby="contained-modal-title-vcenter"
+                    centered>
+                    <Modal.Header closeButton>
+                        <Modal.Title>{this.state.item ? this.state.item.startup.name : ''}</Modal.Title>
+                    </Modal.Header>
+                    <Modal.Body>
+                        {this.state.item && this.state.item.comments ? this.state.item.comments.map(comment => {
+                            if (comment) {
+                                return (
+                                    <Card bg='light' variant='dark'>{comment}</Card>
+                                )
+                            }
+                        }) : null}
+                    </Modal.Body>
+                    <Modal.Footer>
+                        <Button variant="info" onClick={() => this.setState({ ItemModal: null, show: false })}>
+                            Fechar
+                        </Button>
+                    </Modal.Footer>
+                </Modal>
             </div>
         );
     }
