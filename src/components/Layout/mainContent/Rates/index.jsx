@@ -159,6 +159,9 @@ class MainContent extends Component {
                                     </div>
                                     <Accordion.Collapse className='collapse' eventKey="0">
                                         <>
+                                            <div className="status">
+                                                <h4>Média de avaliações</h4>
+                                            </div>
                                             <div className='status'>
                                                 <Card.Title>Proposta</Card.Title>
                                                 <ReactStars
@@ -199,7 +202,7 @@ class MainContent extends Component {
                                                 <Badge variant='warning'>{parseInt(item.desenv) / 2}</Badge>
                                             </div>
                                             <div className='status'>
-                                                <a className='linkModal' onClick={() => this.setState({ item, show: true })}>Checar comentários</a>
+                                                <Button variant='info' onClick={() => this.setState({ item, show: true })}>Checar comentários</Button>
                                             </div>
                                         </>
                                     </Accordion.Collapse>
