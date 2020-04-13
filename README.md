@@ -1,4 +1,5 @@
-# ![](/public/logo192.png) ![/src/assets/TextLogo.png]
+![](/public/logo192.png) 
+![/src/assets/TextLogo.png]
 
 ## O que foi utilizado no desenvolvimento
 - **_React.js_**
@@ -24,11 +25,11 @@
 ##  [StartupFest](https://startupfest.web.app) ou https://startupfest.web.app
 
 1. Na barra url, clique no link indicado
-![](/src/assets/ChromePWA(1).jpeg)
+![](/src/assets/ChromePWA(1).png)
 2. Clique em instalar como mostra a imagem
-![](/src/assets/ChromePWA(2).jpeg)
+![](/src/assets/ChromePWA(2).png)
 3. Após a instalação irá abrir o app e será adicionado o icone no seu Desktop
-![](/src/assets/ChromePWA(3).jpeg)
+![](/src/assets/ChromePWA(3).png)
 
 # Como Instalar O APP no Mobile
     Esses passos funcionam no Google Chrome e não tem suporte com IOS, e apenas nos links com o protocolo https, para o mesmo acesse Link: 
