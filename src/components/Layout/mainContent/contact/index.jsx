@@ -21,9 +21,12 @@ class Index extends Component {
                         <div className='iconText'>
                             <h3><i className='fab fa-linkedin'></i></h3> <a href="https://www.linkedin.com/in/augusto-henrique-do-amaral-49a084139/"><b>Augusto Henrique do Amaral</b></a>
                         </div>
+                        <div className='iconText'>
+                            <h5>Me contrata... <i class="fas fa-sad-tear"></i></h5>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </div >
         );
     }
 }
