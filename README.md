@@ -1,5 +1,4 @@
-![](/public/logo192.png) 
-![/src/assets/TextLogo.png]
+![](/public/logo192.png) ![](/src/assets/TextLogo.png)
 
 ## O que foi utilizado no desenvolvimento
 - **_React.js_**
