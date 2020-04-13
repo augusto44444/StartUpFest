@@ -1,0 +1,104 @@
+.MainContent{
+    background: #fff;
+    padding: 1.5em;
+    margin-top: 10vh;
+    overflow: hidden;
+
+}
+
+
+.loading{
+    display: block;
+    margin: auto;
+    font-size: 3em;
+    color: rgb(90, 23, 248);
+}
+
+.button{
+    width: 100% !important;
+    margin: 10px 0px;
+}
+
+.card-img{
+    background-image: url('https://bonitaselfdefense.com/wp-content/uploads/2017/04/default-image.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 250px;
+    max-height: 250px;
+    min-width: 100%;
+}
+
+.status{
+    display: flex;
+    flex-direction: column;
+    margin: 20px ;
+}
+
+.status .card-title{
+    margin-right: 20px;
+}
+
+.status .badge{
+    margin-left: 10px;
+    width: 30px;
+}
+
+
+@media screen and (min-width: 1024px){
+    .button{
+        margin: 0px;
+    }
+
+    .card{
+        min-height: max-content;
+        padding: 0;
+    }
+    
+
+    .card-body{
+        display: flex !important;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .ImageAndTitle{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ImageAndTitle .card-img{
+       margin-right: 1.5em;
+    }
+
+    .card-body > .rightDiv{
+        display: flex;
+        padding: 10px 20px;
+        
+    }
+    
+    .rightDiv .badge{
+        display: flex !important;
+        margin-left: 10px;
+        justify-content: center;
+        align-items: center;   
+        min-width: 30px !important;
+        height: 30px;
+    }
+    
+    .card-img{
+        min-height: 80px;
+        max-height: 80px;
+        min-width: 80px;
+        height: 80px;
+        width: 80px;
+    }
+
+    .status{
+        margin-left: 20%;
+    }
+
+
+}

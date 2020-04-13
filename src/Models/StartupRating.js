@@ -8,7 +8,7 @@ const database = firebase.database();
 export function SaveRate(values) {
     const { StartupName, proposta, pitch, desenv, comment } = values;
 
-    const StartupName2 = StartupName.replace(/[^a-zA-Z0-9]+/g,'');
+    const StartupName2 = StartupName.replace(/[^a-zA-Z0-9]+/g, '');
 
     console.log(StartupName2)
 
@@ -20,5 +20,18 @@ export function SaveRate(values) {
             }).catch(err => {
                 reject({ err, success: false });
             })
+    })
+}
+
+
+export function getRates() {
+    return new Promise((resolve, reject) => {
+        const ref = database.ref(MainTable)
+        ref.once('value').then(snapshot => {
+            const DataSnapshot = snapshot.val()
+            resolve(DataSnapshot)
+        }).catch(err => {
+            reject(err)
+        })
     })
 }
